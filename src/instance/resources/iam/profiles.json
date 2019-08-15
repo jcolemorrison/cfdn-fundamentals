@@ -1,0 +1,12 @@
+{
+  "InstanceProfile": {
+    "Type": "AWS::IAM::InstanceProfile",
+    "Properties": {
+      "Roles": [
+        {
+          "Ref": "InstanceIamLogRole"
+        }
+      ]
+    }
+  }
+}

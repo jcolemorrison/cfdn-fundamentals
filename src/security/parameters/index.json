@@ -1,0 +1,20 @@
+{
+  "ParamAuthorName": {
+    "Type": "String",
+    "Description": "Owner of the CFN template"
+  },
+  "ParamAllowSSHFromRange": {
+    "Type": "String",
+    "Description": "IP CidrBlock to allow SSH access from",
+    "Default": "0.0.0.0/0"
+  },
+  "ParamAllowSSHAccess": {
+    "Type": "String",
+    "AllowedValues": [
+      "true",
+      "false"
+    ],
+    "Default": "true",
+    "ConstraintDescription": "Please input true or false for SSH access"
+  }
+}

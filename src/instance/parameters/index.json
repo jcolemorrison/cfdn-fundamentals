@@ -1,0 +1,21 @@
+{
+  "ParamAuthorName": {
+    "Type": "String",
+    "Description": "Owner of the CFN template"
+  },
+  "ParamEC2KeyPair": {
+    "Type": "AWS::EC2::KeyPair::KeyName",
+    "Description": "Name of an existing EC2 KeyPair to enable SSH access to the EC2 Instance."
+  },
+  "ParamAmiId": {
+    "Type": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
+    "Default": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+  },
+  "ParamSecurityStackName": {
+    "Type": "String",
+    "Description": "Name of an active CloudFormation stack that contains the Security Group ID",
+    "MinLength": 1,
+    "MaxLength": 128,
+    "AllowedPattern": "^[a-zA-z][-a-zA-Z0-9]*$"
+  }
+}

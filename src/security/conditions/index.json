@@ -1,0 +1,5 @@
+{
+  "AllowSSHAccess": {
+    "Fn::Equals": [{ "Ref": "ParamAllowSSHAccess" }, "true"]
+  }
+}
